@@ -1,0 +1,292 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLGMAIN DIALOGEX 0, 0, 367, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AaLl86 x86 Memory Bootkit"
+MENU IDR_MAINMENU
+FONT 10, "Calibri", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "&OK",IDOK,311,198,50,14
+    DEFPUSHBUTTON   "&Exit",IDCANCEL,7,198,50,14
+    GROUPBOX        "Installation Method",IDC_STATIC,51,126,258,62,0,WS_EX_TRANSPARENT
+    CONTROL         "Install on System Boot Disk as MBR Bootkit",IDC_BTNMBR,
+                    "Button",BS_AUTORADIOBUTTON,65,139,226,10,WS_EX_TRANSPARENT
+    CONTROL         "Install on System Boot Disk as new Boot Sector (Acronis compatible)",IDC_BTNVBR,
+                    "Button",BS_AUTORADIOBUTTON,65,152,226,10,WS_EX_TRANSPARENT
+    CONTROL         "Make a bootable floppy or pendrive",IDC_BTNFLOPPY,
+                    "Button",BS_AUTORADIOBUTTON,65,166,135,10,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_REMDRVLIST,204,164,30,16,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLGMAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINICO             ICON                    "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Install",                    IDM_FILE_INSTALL
+        MENUITEM "Bootkit &Options",            IDM_FILE_OPTIONS
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP_HELP
+        MENUITEM "&Generate System Report",     ID_HELP_GENERATE_REPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_BINSTARTER          BINARY                  "..\\RamBootkit - Starter.bin"
+IDR_BINMAIN             BINARY                  "..\\RamBootkit - Main.bin"
+IDR_BINMAINNS           BINARY                  "..\\RamBootkit - Main-NS.bin"
+IDR_BINSTARTER_VBR      BINARY                  "..\\RamBootkit - VBR.bin"
+IDR_BINORG              BINARY                  "res\\Seven_MBR.bin"
+IDR_BINUEFI             BINARY                  "..\\UEFI\\Release\\UefiMemoryBtk.efi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,4
+ PRODUCTVERSION 1,2,0,4
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "007f04b0"
+        BEGIN
+            VALUE "Comments", "Saferbytes X86 Memory Bootkit - Based on an idea of Andrea Allievi"
+            VALUE "CompanyName", "Saferbytes"
+            VALUE "FileDescription", "X86 Memory bootkit Setup application"
+            VALUE "FileVersion", "1, 2, 0, 4"
+            VALUE "InternalName", "BootkitInstaller"
+            VALUE "LegalCopyright", "Copyright (C) 2013 Saferbytes "
+            VALUE "OriginalFilename", "Bootkit_Installer.exe"
+            VALUE "ProductName", "X86 Memory Bootkit"
+            VALUE "ProductVersion", "1, 2, 0, 4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x7f, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_MAINPNG             PNG                     "res\\main.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_INSTALLICO          BITMAP                  "res\\InstallIco.bmp"
+IDB_EXITICO             BITMAP                  "res\\ExitIco.bmp"
+IDB_HELPICO             BITMAP                  "res\\HelpIco.bmp"
+IDB_SETTINGSICO         BITMAP                  "res\\SettingsIco.bmp"
+IDB_ABOUTICO            BITMAP                  "res\\AboutIco.bmp"
+#endif    // Italiano (Italia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglese (Regno Unito) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLGOPTIONS DIALOGEX 0, 0, 274, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bootkit Options"
+FONT 10, "Calibri", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,219,124,48,12
+    PUSHBUTTON      "&Cancel",IDCANCEL,7,124,48,12
+    CONTROL         "Auto Detect",IDC_RBTKTYPEAUTO,"Button",BS_AUTORADIOBUTTON,23,37,54,14
+    CONTROL         "ONLY Compatible",IDC_RBTKTYPECOMPATIBLE,"Button",BS_AUTORADIOBUTTON,168,37,66,14
+    CONTROL         "Ignore system MBR type analysis",IDC_CHKIGNOREMBRTYPE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,58,244,10
+    CONTROL         "ONLY Standard",IDC_RBTKTYPESTD,"Button",BS_AUTORADIOBUTTON,85,37,66,14
+END
+
+IDD_DLGABOUT DIALOGEX 0, 0, 299, 196
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "APPTITLE"
+FONT 10, "Calibri", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,247,177,45,12
+    PUSHBUTTON      "&System Info",IDC_BTNSYSINFO,7,177,45,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLGOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DLGABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_INFOICO             ICON                    "res\\info.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_SBLOGOPNG           PNG                     "res\\saferBytes_logo.png"
+#endif    // Inglese (Regno Unito) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

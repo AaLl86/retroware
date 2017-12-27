@@ -1,0 +1,65 @@
+nt!MxMemoryLicense:
+81ba644c 8bff            mov     edi,edi
+81ba644e 55              push    ebp
+81ba644f 8bec            mov     ebp,esp
+81ba6451 83ec1c          sub     esp,1Ch
+81ba6454 8365f400        and     dword ptr [ebp-0Ch],0
+81ba6458 8365fc00        and     dword ptr [ebp-4],0
+81ba645c 56              push    esi
+81ba645d 6a04            push    4
+81ba645f 5e              pop     esi
+81ba6460 8d45f8          lea     eax,[ebp-8]
+81ba6463 50              push    eax
+81ba6464 56              push    esi
+81ba6465 8d45fc          lea     eax,[ebp-4]
+81ba6468 50              push    eax
+81ba6469 8d45f4          lea     eax,[ebp-0Ch]
+81ba646c 50              push    eax
+81ba646d 8d45ec          lea     eax,[ebp-14h]
+81ba6470 50              push    eax
+81ba6471 66c745ec3c00    mov     word ptr [ebp-14h],3Ch
+81ba6477 66c745ee3e00    mov     word ptr [ebp-12h],3Eh
+81ba647d c745f0d037bb81  mov     dword ptr [ebp-10h],offset nt! ?? ::PBOPGDP::`string' (81bb37d0)
+81ba6484 66c745e42c00    mov     word ptr [ebp-1Ch],2Ch
+81ba648a 66c745e62e00    mov     word ptr [ebp-1Ah],2Eh
+81ba6490 c745e8c0dab781  mov     dword ptr [ebp-18h],offset nt! ?? ::PBOPGDP::`string' (81b7dac0)
+81ba6497 8975f8          mov     dword ptr [ebp-8],esi
+81ba649a e8a929d0ff      call    nt!ZwQueryLicenseValue (818a8e48)
+81ba649f 85c0            test    eax,eax
+81ba64a1 7c11            jl      nt!MxMemoryLicense+0x68 (81ba64b4)
+81ba64a3 8b45fc          mov     eax,dword ptr [ebp-4]
+81ba64a6 85c0            test    eax,eax			<- Apply path here 
+81ba64a8 740a            je      nt!MxMemoryLicense+0x68 (81ba64b4)
+81ba64aa c1e008          shl     eax,8
+81ba64ad a32c969881      mov     dword ptr [nt!MiTotalPagesAllowed (8198962c)],eax 
+81ba64b2 eb0a            jmp     nt!MxMemoryLicense+0x72 (81ba64be)
+81ba64b4 c7052c96988100000800 mov dword ptr [nt!MiTotalPagesAllowed (8198962c)],80000h    
+81ba64be 8365f400        and     dword ptr [ebp-0Ch],0
+81ba64c2 8365fc00        and     dword ptr [ebp-4],0
+81ba64c6 8d45f8          lea     eax,[ebp-8]
+81ba64c9 50              push    eax
+81ba64ca 56              push    esi
+81ba64cb 8d45fc          lea     eax,[ebp-4]
+81ba64ce 50              push    eax
+81ba64cf 8d45f4          lea     eax,[ebp-0Ch]
+81ba64d2 50              push    eax
+81ba64d3 8d45e4          lea     eax,[ebp-1Ch]
+81ba64d6 50              push    eax
+81ba64d7 8975f8          mov     dword ptr [ebp-8],esi
+81ba64da e86929d0ff      call    nt!ZwQueryLicenseValue (818a8e48)
+81ba64df 85c0            test    eax,eax
+81ba64e1 5e              pop     esi
+81ba64e2 7c10            jl      nt!MxMemoryLicense+0xa8 (81ba64f4)
+81ba64e4 8b45fc          mov     eax,dword ptr [ebp-4]		<- Apply patch here
+81ba64e7 85c0            test    eax,eax
+81ba64e9 7409            je      nt!MxMemoryLicense+0xa8 (81ba64f4)
+81ba64eb 8b4d0c          mov     ecx,dword ptr [ebp+0Ch]
+81ba64ee c1e008          shl     eax,8
+81ba64f1 48              dec     eax
+81ba64f2 8901            mov     dword ptr [ecx],eax
+81ba64f4 a12c969881      mov     eax,dword ptr [nt!MiTotalPagesAllowed (8198962c)]
+81ba64f9 8b4d08          mov     ecx,dword ptr [ebp+8]
+81ba64fc 8901            mov     dword ptr [ecx],eax
+81ba64fe c9              leave
+81ba64ff c20800          ret     8
+81ba6502 90              nop

@@ -1,0 +1,59 @@
+|---------------------------------------------------------------------|
+|                       APPUNTI MBR ROOTKIT                           |
+|---------------------------------------------------------------------|
+
+
+INT 13h - Function 02h: Read Disk Sectors
+This function reads disk sectors using CHS format. This can be either a floppy diskette or a hard disk.
+
+On input, the CHS values are contained in the following registers:
+
+AH = function number, 02h in this case
+AL = number of sectors to read (must be nonzero)
+CH = low 8 bits of cylinder number
+CL = high 2 bits of cylinder number and 6-bit sector number as follows:
+     high-order bits 6-7 (hard disk only) contain high 2 bits of cylinder number
+     low-order bits 0-5 contain sector number (1-63)
+DH = head number
+DL = drive number (bit 7 set for hard disk)
+ES:BX = data buffer
+On output, the data that is read is placed in the location specified by ES:BX.
+
+Status of the read operation is contained in the following registers:
+
+If CF = 0, then no error and AH = 0
+If CF = 1, then error and AH contains an error code
+
+
+
+
+
+Determinare la GDT:
+    ; Determino dove è la GDT
+    jmp short vai
+suca:
+    dd 0
+    dd 0
+vai:
+    SGDT [cs:suca+LOADLOC]
+
+    ; Debug
+    InitializeDebug
+    mov ax, 0
+    mov ds, ax
+    mov si, suca + LOADLOC
+    mov cx, 8
+    DumpMemory
+    hlt
+
+
+    sti
+    inc di
+    cmp cx, 0
+    jle Int13Hook_scan_done
+    dec cx
+    cmp al, byte [es:di]
+    jnz Int13Hook_scan_loop
+    inc di
+
+

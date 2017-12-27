@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="MetroTest1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MetroTest1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Green">
+        <Button Content="DoIt!" HorizontalAlignment="Left" Height="77" Margin="442,39,0,0" VerticalAlignment="Top" Width="171" Click="Button_Click_1" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="39" Margin="92,60,0,0" TextWrapping="Wrap" Text="AaLl86 Connection Test" VerticalAlignment="Top" Width="302" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="cmdExit" Content="Exit" HorizontalAlignment="Left" Margin="496,282,0,0" VerticalAlignment="Top" Height="54" Width="117" ClickMode="Press" Click="cmdExit_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="92,189,0,0" TextWrapping="Wrap" Text="Open File Test" VerticalAlignment="Top" Width="250" FontSize="24"/>
+        <Button Content="Test File!" HorizontalAlignment="Left" Height="55" Margin="442,177,0,0" VerticalAlignment="Top" Width="171" Click="BtnFile_Click"/>
+
+    </Grid>
+</Page>

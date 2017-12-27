@@ -1,0 +1,15 @@
+CX = 0x8904 = 1000 1001 00 00 0100
+     Sector = 4  Cylinder = 548
+     Head = 04   
+
+HPC = max num of heads per chy = 255
+SPT = max num of sectors per track = 63
+last chylinder = 1020 
+
+LBA = ((C * HPC) + H) * SPT + S -1
+LBA = ((548 * 255) + 4) * 63 + 3
+
+------------------------------------------------------
+
+Sector 0x054B5AB8
+Buffer: 0:0x7E00

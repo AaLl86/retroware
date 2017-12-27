@@ -1,0 +1,13 @@
+AaLl86 AppContainer Notes
+
+
+ws2_32!connect Stack
+mswsock!SockDoConnectReal	<-- Here there is AppContainer capability check
+mswsock!SockDoConnect   
+mswsock!WSPConnec
+
+StreamSocket ConnectAsync function Stack
+WS2_32!WSAConnectByNameW
+Windows_Networking!StreamSocketConnectOperationServer::ConnectByName
+Windows_Networking!SocketNameResolver::CompleteGetAddrInfoEx
+

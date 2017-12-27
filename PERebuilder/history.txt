@@ -1,0 +1,10 @@
+AaLl86 PE Rebuilder
+
+VERSION HISTORY:
+09/08/2013 - First version, everything
+29/03/2014 - Fixed bug in Relocations ("if (item == 0) break;" line)
+
+13/11/2017 - Release 0.2
+			 Rewritten the command line parsing code
+			 Implemented the check for the sections file alignment
+			 Re-engineered the Rebuild engine
