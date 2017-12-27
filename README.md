@@ -22,7 +22,11 @@ Here is the list of included tools:
   <li><b>PeRebuilder</b><br>
     This application is the only one that is actually still supported in the present days.
     It is a tool that is able to help malware researches that always dump a complete PE file (Portable Executable) from memory using a debugger (like WinDbg, and NOT Ollydbg :-), just kidding right now...). The tool is able to automatically reconstruct the PE, and save it in a form that the Windows Loader is able to run (fixing the file alignment, relocating each section, fixing the Import address table, and so on...)<br>
-  If you are a security enthusiast or a malware anlyst give it a try and, if you need some support or you have some new ideas, feel free to reach me at <a href="mailto:info@andrea-allievi.com">info@andrea-allievi.com</a>.
+  If you are a security enthusiast or a malware anlyst give it a try and, if you need some support or you have some new ideas, feel free to reach me at <a href="mailto:info@andrea-allievi.com">info@andrea-allievi.com</a>.<br><br>
+  </li>
+
+  <li><b>Talos Hypervisor, many others...</b><br>
+  Still waiting the authorizations.... Stay tuned!<br><br>
   </li>
 </ul>
 
