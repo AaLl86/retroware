@@ -30,8 +30,11 @@ Here is the list of included tools:
 All the tools and code included in this repository are distributed using the "AaLl86" license :-). So, basically, you are free to use, redistribute and modify the code <b>BUT</b> only under the following conditions:
 <ol>
   <li>Mention the original project<br>
-    If you plan to include some of the code that you have found here, or if you get the inspiration for a new tool based on the concepts expressed here, you need to mention the original author in your code/publication (me in this case)</li>
+    If you plan to include some of the code that you have found here, or if you get the inspiration for a new tool based on the concepts expressed here, <b>you need to mention the original author</b> in your code/publication (me in this case)</li>
   <li>Don't harm anyone<br>
-    The concepts and code stored in this repository could produce bad effects if used in the wrong way. <b>I do not want anybody do malicious things</b> with it. If so, I will immediately <b>DELETE</b> all the code and not publish anything else.
+    The concepts and code stored in this repository could produce bad effects if used in the wrong way. <b>I do not want anybody doing malicious things with it</b>. If so, I will immediately <b>DELETE</b> all the code and not publish anything anymore.
   </li>
 </ol>
+<br>
+Last revision: 12/27/2017 (Merry Late-Christmas!)<br>
+by AaLl86
