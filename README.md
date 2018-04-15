@@ -25,8 +25,14 @@ Here is the list of included tools:
   If you are a security enthusiast or a malware anlyst give it a try and, if you need some support or you have some new ideas, feel free to reach me at <a href="mailto:info@andrea-allievi.com">info@andrea-allievi.com</a>.<br><br>
   </li>
 
-  <li><b>Talos Hypervisor, many others...</b><br>
-  Still waiting the authorizations.... Stay tuned!<br><br>
+  <li><b>Talos Hypervisor</b><br>
+    The original Hypervisor that I wrote for Talos in the year 2015.
+    It was originally an internal project, but now I got the authorization to publish it. The hypervisor is only a skeleton and lacks some features like the usage of EPTs, but could be useful as a starting point.<br>
+    This project is similar to others created by external security researchers and friends: <ul>
+       <li> <a href="https://github.com/ionescu007/SimpleVisor">Alex Ionescu' SimpleVisor</a></li>
+       <li> <a href="https://github.com/tandasat/Sushi"> Satoshi Tanda' Sushi</a></li>
+    </ul
+  <br><br>
   </li>
 </ul>
 
