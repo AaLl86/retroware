@@ -36,6 +36,10 @@ Here is the list of included tools:
   </li>
 </ul>
 
+## Compiled binaries
+The "bin" folder of this repro contains the compiled binaries created from the source code. Use them at your own risk.
+
+
 <h2>License</h2>
 All the tools and code included in this repository are distributed using the "AaLl86" license :-). So, basically, you are free to use, redistribute and modify the code <b>BUT</b> only under the following conditions:
 <ol>
@@ -46,5 +50,6 @@ All the tools and code included in this repository are distributed using the "Aa
   </li>
 </ol>
 <br>
-Last revision: 4/15/2018 (Merry Late-Easter! :-))<br>
+
+Last revision: 11/11/2023 (Autumn :-))<br>
 by AaLl86
